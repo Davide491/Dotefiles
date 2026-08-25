@@ -3,7 +3,7 @@ This is a file wich i explain dependencies and final
 apperince 
 ## Dependencies
 Niri
-Waybar
+Ironbar
 Fuzzel
 Swaybg
 ## How to modifies your config.kdl 
@@ -18,7 +18,15 @@ In the line
 ``` Kdl
 Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
 ```
-you can modify kitty with your favourite terminal emulator (for exaples UXterm Xterm Alacritty Konsole Gnome-terminal)
+change kitty with your file manager or the shortcut with Mod(In normal desktop super)+T in Mod+K for exaples  
+### Change "default" file manager 
+In the line
+``` Kdl
+Mod+E { spawn "thunar"; } 
+```
+change thunar with your file manager or the shortcut with Mod(In normal desktop super)+E in Mod+K for exaples  
+
+You can modify kitty with your favourite terminal emulator (for exaples UXterm Xterm Alacritty Konsole Gnome-terminal)
 for more information visit https://niri-wm.github.io/niri/Getting-Started.html
 
 ![My desktop](image.png)
