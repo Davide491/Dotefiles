@@ -26,6 +26,8 @@ Mod+E { spawn "thunar"; }
 ```
 change thunar with your file manager or the shortcut with Mod(In normal desktop super)+E in Mod+K for exaples  
 
+To open fuzzel press Super+D
+
 You can modify kitty with your favourite terminal emulator (for exaples UXterm Xterm Alacritty Konsole Gnome-terminal)
 for more information visit https://niri-wm.github.io/niri/Getting-Started.html
 
