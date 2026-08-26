@@ -1,7 +1,7 @@
 let {
     $workspaces = { type = "workspaces" }
 
-    $focused = { type = "focused" icon_size = 16 }
+    $focused = { type = "focused" icon_size = 16   truncate = { mode = "end" max_length = 30 } }
 
     $battery = { type = "battery" show_if = "ls /sys/class/power_supply/ | grep --quiet '^BAT'" }
     //$sys_info = { type = "sys_info" format = ["{cpu_percent}% " "{memory_percent}% "] interval.cpu = 1 }
