@@ -1,34 +1,46 @@
-# My dotfiles of niri, waybar and fuzzel
-This is a file wich i explain dependencies and final
-apperince 
-## Dependencies
-Niri
-Ironbar
-Fuzzel
-Swaybg
-## How to modifies your config.kdl 
-### Change background
-In the line 
-``` Kdl
-spawn-at-startup "swaybg" "-m" "fill" "-i" "/usr/share/backgrounds/archlinux/awesome.png"
-```
-there is a path of a png image you can change with your image in all folder in your system.
-### Change "default" terminal
-In the line 
-``` Kdl
-Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-```
-change kitty with your file manager or the shortcut with Mod(In normal desktop super)+T in Mod+K for exaples  
-### Change "default" file manager 
-In the line
-``` Kdl
-Mod+E { spawn "thunar"; } 
-```
-change thunar with your file manager or the shortcut with Mod(In normal desktop super)+E in Mod+K for exaples  
+# Niri dotefiles
 
-To open fuzzel press Super+D
-
-You can modify kitty with your favourite terminal emulator (for exaples UXterm Xterm Alacritty Konsole Gnome-terminal)
-for more information visit https://niri-wm.github.io/niri/Getting-Started.html
-
+## Notes and license terms
+This is a basic configuration is not a distro like Omarchy, the
+lisence is GPLv3 for more information look the file LISENCE or visit https://www.gnu.org/licenses/gpl-3.0.html, when you download this software you automatically agree license terms
 ![My desktop](image.png)
+
+
+## Dependencies
+- Hyprlock 
+- Walker (Elephant)
+- Thunar
+- Swaybg
+- Ironbar
+
+
+## Install
+Run install.sh or launch this commands
+
+for Niri
+
+``` ```
+cp ~/Dotfiles/niri/config.kdl ~/.config/niri/
+``` ```
+
+For Hyprlock and Hypridle
+
+``` ```
+mkdir -p ~/.config/hypr && cp ~/Dotfiles/hypr/* ~/.config/hypr
+``` ```
+
+For Ironbar
+
+``` ``` 
+mkdir -p ~/.config/ironbar && cp ~/Dotfiles/ironbar/* ~/.config/ironbar
+``` ```
+
+For Walker
+
+``` ```
+mkdir -p ~/.config/walker && cp ~/Dotfiles/walker/* ~/.config/walker
+``` ```
+
+## Modify niri keybinds
+
+In the sections ```binds {``` in config.kdl there is a long list of atctions,  these actions can be done with the keybord the syntax is Mod+key { actions } for example Mod+T { spawn "kitty"} open the terminal emulator kitty you can modify   

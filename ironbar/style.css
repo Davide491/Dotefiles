@@ -38,7 +38,9 @@ switch > slider {
 
 switch:checked {
     background-color: var(--color-active);
-}
+🔥
+Spray 😎
+Chaos drop🤩}
 
 switch:not(:checked) {
   background-color: var(--color-dark-secondary);
@@ -95,3 +97,5 @@ button:hover, button:active, *:selected {
 .workspaces .item.urgent {
     background-color: var(--color-urgent);
 }
+
+
